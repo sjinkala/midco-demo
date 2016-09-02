@@ -3,42 +3,42 @@
     <head>
 
       <title>
-
-      Midco Demo
+        Midco Demo
       </title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-     <style>
+    <style>
     
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 15px;
-      overflow: hidden;
-      background-color: #A6A6A6;
-    }
+      
+      ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 15px;
+       overflow: hidden;
+       background-color: #A6A6A6;
+       }
 
-    li {
-      float: fixed;
-      display:inline-block;
-    }
+      li {
+       float: fixed;
+       display:inline-block;
+      }
 
-   li a {
-    color: white;
-    text-align: top;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size:18px;
-    
-    } 
+      li a {
+       color: white;
+       text-align: top;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size:18px;
+      } 
 
-  img {
-    margin:right;
-    display: inline;
-    text-align: right;
-    padding-top: 80px;
-    position:absolute;
-    } 
+      img {
+       margin:right;
+       display: inline-block;
+       text-align: right;
+       padding-top: 80px;
+       position:absolute;
+       height:80px 80px 80px 80px;
+      } 
       
      /*#setup {
      margin:auto;
@@ -61,23 +61,27 @@
       background-color:#A6A6A6;
      }*/
 
-     h1{
+      h1 {
         text-align:center;
         font-family: "Open Sans";
         font-weight: 300;
         font-style: italic;
       }
         
+      html {
+       background: linear-gradient(to left, #000000 , #434343);
+      }
 
-
-   html {
-    background: linear-gradient(to left, #000000 , #434343);
-    }
-
+      .input-group {
+        margin-top: 20px;
+        margin-left: 10px;
+        color:black;
+        font-size: 16px
+      }
      
-    
     </style>
-    </head>
+
+  </head>
 
     <h1> VA SERIES TECHNICAL SUPPORT PAGE</h1>
     <hr/>
@@ -85,13 +89,32 @@
 
     <body>
     
-      <img id="vaBurner" src="https://56899623-201839777128779548.preview.editmysite.com/uploads/5/6/8/9/56899623/1472502096.png"/>
+      
       <ul>
-      <li><a href="Contact.html">Contact Us</a></li>
-      <li><a href="Burner.html">Burner Specific and Repair Parts</a></li>
-      <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="Burner.html">Burner Specific and Repair Parts</a></li>
+        <li><a href="About.html">About</a></li>
       </ul>
-      </button>
+       
+       <img id="vaBurner" src="https://56899623-201839777128779548.preview.editmysite.com/uploads/5/6/8/9/56899623/1472502096.png"/>
+       s
+
+        <fieldset>
+         <form>
+         
+         <div class="input-group">
+          
+            Bill of Matieral (BOM):
+        
+          <input class="bom-input" id="bom">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+         </fieldset>
+        
+       
+      </fieldset>
+    </form>
     
 
 
@@ -154,7 +177,7 @@
 
 
 
-</script>
+
 
 
 
