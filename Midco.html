@@ -6,7 +6,8 @@
         Midco Demo
       </title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
+      <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"> </script>"
+      
     <style>
     
       
@@ -36,7 +37,7 @@
        display: inline-block;
        text-align: right;
        padding-top: 80px;
-       position:absolute;
+       position:relative;
        height:80px 80px 80px 80px;
       } 
       
@@ -78,6 +79,7 @@
         color:black;
         font-size: 16px
       }
+
      
     </style>
 
@@ -89,15 +91,19 @@
 
     <body>
     
-      
+    
       <ul>
+
         <li><a href="Contact.html">Contact Us</a></li>
+
         <li><a href="Burner.html">Burner Specific and Repair Parts</a></li>
+
         <li><a href="About.html">About</a></li>
+
       </ul>
        
        <img id="vaBurner" src="https://56899623-201839777128779548.preview.editmysite.com/uploads/5/6/8/9/56899623/1472502096.png"/>
-       s
+       
 
         <fieldset>
          <form>
@@ -106,18 +112,47 @@
           
             Bill of Matieral (BOM):
         
-          <input class="bom-input" id="bom">
-          <input type="submit" value="Submit">
-        </div>
-        </form>
+            <input class="bom-input" id="bom">
+            <input type="submit" value="Submit">
+
+          </div>
+
+         </form>
+
          </fieldset>
         
        
-      </fieldset>
-    </form>
+
     
 
+    <script>
 
+    $('#autocomplete').autocomplete().setOptions(options);
+
+    var bom = [
+     { value: '1450053', data: '145005' },
+    
+     { value: '1450051', data: '145005' },
+
+     { value: '1450050', data: '145005' },
+
+     { value: '1445050', data: '144505' },
+
+     { value: '1440051', data: '144005' },
+
+     { value: '1440050', data: '144005' },
+
+     { value: '1435050', data: '143505' },
+    ];
+
+    $('#autocomplete').autocomplete({
+    lookup: bom,
+    onSelect: function (suggestion) {
+        alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+    }
+   });
+
+ 
 
 
 
