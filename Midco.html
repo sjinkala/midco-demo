@@ -5,7 +5,6 @@
       <title>
         Midco Demo
       </title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
       
       
     <style>
@@ -18,12 +17,10 @@
        overflow: hidden;
        background-color: #A6A6A6;
        }
-
       li {
        float: fixed;
        display:inline-block;
       }
-
       li a {
        color: white;
        text-align: top;
@@ -31,7 +28,6 @@
        text-decoration: none;
        font-size:18px;
       } 
-
       img {
        margin:right;
        display: inline-block
@@ -40,8 +36,6 @@
        position:relative;
        height:80px 80px 80px 80px;
       } 
-
-
       h1 {
         text-align:center;
         font-family: "Open Sans";
@@ -59,7 +53,6 @@
         color:black;
         font-size: 16px
       }
-
      
     </style>
 
@@ -67,6 +60,7 @@
 
     <h1> VA SERIES TECHNICAL SUPPORT PAGE</h1>
     <hr/>
+
     <link href="./styles.css" rel="stylesheet"/>
 
     <body>
@@ -104,40 +98,40 @@
          </fieldset>
         
        
+       
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="./jquery.autocomplete.js"></script>
+<script>
+
+ $( document ).ready(function() {
+        console.log( "ready" );
+    });
 
    
-
-    <script type="text/javascript" src="./jquery.autocomplete.js"></script>
-    <script>
-
     var bom = [
      { value: '1450053', data: '145005' },
-    
      { value: '1450051', data: '145005' },
-
      { value: '1450050', data: '145005' },
-
      { value: '1445050', data: '144505' },
-
      { value: '1440051', data: '144005' },
-
      { value: '1440050', data: '144005' },
-
      { value: '1435050', data: '143505' },
+     { value: '12345',  data: '123456'  },
+      ];
 
-     { value: '12345',  data: '123456'},
+     
 
-    ];
-
-    $('#bomn').autocomplete({
-    lookup: bom,
-    onSelect: function (suggestion) {
+      $('#bomn').autocomplete({
+      lookup: bom,
+      onSelect: function (suggestion) {
         alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-    }
-   });
+      });
+
+      console.log ("suggestion")
 
 
 
+    
 
 
 
