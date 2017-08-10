@@ -1,2 +1,2 @@
 # midco-demo
-Demo website
+a Demo website that uses an autocomplete
